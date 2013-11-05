@@ -1,0 +1,62 @@
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="../js/question.js"></script>
+<style type="text/css">
+<!--
+div#div1 { 
+	width:100%;
+	height:auto;
+	border: 1px solid green;
+}
+div#div2 { 
+	width:100%;
+	height:auto;
+	border: 1px solid red;
+	padding: 0 0 3 3;
+}
+#type_select {
+	display:none;
+}
+#type_number {
+	display:none;
+}
+-->
+</style>
+</head>
+<body>
+<!-- <form name="form1" id="form1"> -->
+<h1>Question</h1>
+<input type="button" id="button1" value="Reload!!!"></input>
+<!-- </form> -->
+<div id="div1">aaa</div>
+<br/>
+<div id="div2">
+<input type="radio" name="type1" id="radio1" checked="checked">text</input>
+<input type="radio" name="type1" id="radio2">select</input>
+<input type="radio" name="type1" id="radio3">number</input>
+<br/>
+Question
+<div>
+<input type="text" id="question1" value=""></input>
+</div>
+<!-- text -->
+Answer
+<div id="type_text">
+<input type="text" id="answer1" value=""></input>
+</div>
+<!-- select -->
+<div id="type_select">
+A:<input type="text" id="answer_a" value=""></input>
+B:<input type="text" id="answer_b" value=""></input>
+C:<input type="text" id="answer_c" value=""></input>
+</div>
+<!-- number -->
+<div id="type_number">
+数量<input type="text" id="answer_num" value=""></input>
+単位<input type="text" id="answer_unit" value=""></input>
+</div>
+<input type="button" id="button2" value="登録!"></input>
+</div>
+</body>
+</html>
